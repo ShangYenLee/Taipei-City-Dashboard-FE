@@ -4187,6 +4187,195 @@
 				"https://github.com/tpe-doit/YouBike-Optimization"
 			],
 			"contributors": ["tuic"]
+		},
+		"201": {
+			"id": 201,
+			"index": "childbearing_age",
+			"map_config": null,
+			"history_data": true,
+			"chart_config": {
+				"types": ["TimelineSeparateChart"],
+				"color": ["#AD5A5A"],
+				"unit": "歲"
+			},
+			"name": "生育第一胎平均年齡",
+			"source": "行政院性別平等會",
+			"time_from": "2010",
+			"time_to": "2022",
+			"update_freq": 1,
+			"update_freq_unit": "year",
+			"short_desc": "顯示歷年臺北市生母生育第一胎平均年齡",
+			"long_desc": "顯示2010年開始臺北市生母生育第一胎平均年齡，資料來源為行政院性別平等會，每年更新",
+			"use_case": "None",
+			"links": [
+				"https://www.gender.ey.gov.tw/gecdb/Stat_Statistics_DetailData.aspx?sn=lT4902z3YmLGBZadLKLSzQ%40%40&d=m9ww9odNZAz2Rc5Ooj%24wIQ%40%40"
+			],
+			"tags": [],
+			"contributors": ["tuic"]
+		},
+		"202": {
+			"id": 202,
+			"index": "childcare_center",
+			"map_config": [
+				{
+					"index": "childcare_center",
+					"paint": {},
+					"property": [
+						{
+							"key": "地址",
+							"name": "地址"
+						},
+						{
+							"key": "電話",
+							"name": "電話"
+						},
+						{
+							"key": "核定收托人數",
+							"name": "核定收托人數"
+						},
+						{
+							"key": "實際收托人數",
+							"name": "實際收托人數"
+						},
+						{
+							"key": "評鑑結果",
+							"name": "評鑑結果"
+						}
+					],
+					"icon": "childcare",
+					"type": "symbol",
+					"title": "準公共化托嬰中心"
+				}
+			],
+			"chart_config": {
+				"color": ["#84C1FF"],
+				"types": ["DistrictChart", "ColumnChart"],
+				"unit": "間",
+				"map_filter": [
+					"dist",
+					[
+						"北投區",
+						"士林區",
+						"內湖區",
+						"南港區",
+						"松山區",
+						"信義區",
+						"中山區",
+						"大同區",
+						"中正區",
+						"萬華區",
+						"大安區",
+						"文山區"
+					]
+				]
+			},
+			"history_data": false,
+			"source": "社會局",
+			"time_from": "2022-05-03T00:00:00Z",
+			"time_to": null,
+			"update_freq": "1",
+			"update_freq_unit": "month",
+			"name": "準公共化托嬰中心",
+			"short_desc": "顯示全市各行政區準公共化托嬰中心的數量和分布位置",
+			"long_desc": "顯示全市各行政區的準公共化托嬰中心數量和分布位置，資料來源為台北市社會局開放資料，不定期更新。",
+			"use_case": "台北市準公共化托嬰中心的數量與分布位置資料，將幫助我們掌握準公共化托嬰中心的疏密情況，並進一步比較其與其他指標的相關性。",
+			"links": [
+				"https://data.taipei/dataset/detail?id=aeaaa517-089c-42a7-ad5b-60fef89c3545"
+			],
+			"tags": [],
+			"contributors": ["tuic"]
+		},
+		"203": {
+			"id": 203,
+			"index": "car_theft",
+			"map_config": [
+				{
+					
+					"index": "car_theft",
+					"paint": {
+						"heatmap-weight": [
+							"interpolate",
+							["linear"],
+							["get", "案件數"],
+							0,
+							0,
+							6,
+							1
+							],
+						"heatmap-intensity": [
+							"interpolate",
+							["linear"],
+							["zoom"],
+							0,
+							1,
+							9,
+							3
+							]
+					},
+					"property": [
+						{
+							"key": "地址",
+							"name": "地址"
+						},
+						{
+							"key": "電話",
+							"name": "電話"
+						},
+						{
+							"key": "核定收托人數",
+							"name": "核定收托人數"
+						},
+						{
+							"key": "實際收托人數",
+							"name": "實際收托人數"
+						},
+						{
+							"key": "評鑑結果",
+							"name": "評鑑結果"
+						}
+					],
+					"icon": "",
+					"type": "heatmap",
+					"title": "準公共化托嬰中心"
+				}
+			],
+			"chart_config": {
+				"color": ["#84C1FF"],
+				"types": ["DistrictChart", "ColumnChart"],
+				"unit": "間",
+				"map_filter": [
+					"dist",
+					[
+						"北投區",
+						"士林區",
+						"內湖區",
+						"南港區",
+						"松山區",
+						"信義區",
+						"中山區",
+						"大同區",
+						"中正區",
+						"萬華區",
+						"大安區",
+						"文山區"
+					]
+				]
+			},
+			"history_data": false,
+			"source": "社會局",
+			"time_from": "2022-05-03T00:00:00Z",
+			"time_to": null,
+			"update_freq": "1",
+			"update_freq_unit": "month",
+			"name": "準公共化托嬰中心",
+			"short_desc": "顯示全市各行政區準公共化托嬰中心的數量和分布位置",
+			"long_desc": "顯示全市各行政區的準公共化托嬰中心數量和分布位置，資料來源為台北市社會局開放資料，不定期更新。",
+			"use_case": "台北市準公共化托嬰中心的數量與分布位置資料，將幫助我們掌握準公共化托嬰中心的疏密情況，並進一步比較其與其他指標的相關性。",
+			"links": [
+				"https://data.taipei/dataset/detail?id=aeaaa517-089c-42a7-ad5b-60fef89c3545"
+			],
+			"tags": [],
+			"contributors": ["tuic"]
 		}
 	}
 }

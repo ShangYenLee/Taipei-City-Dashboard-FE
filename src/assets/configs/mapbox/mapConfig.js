@@ -358,4 +358,18 @@ export const maplayerCommonLayout = {
 			60,
 		],
 	},
+	"symbol-childcare": {
+		"icon-image": "baby",
+		"icon-size": [
+			"interpolate",
+			["linear"],
+			["zoom"],
+			11.99,
+			0.3,
+			14,
+			0.3,
+			22,
+			0.3,
+		],
+	},
 };
